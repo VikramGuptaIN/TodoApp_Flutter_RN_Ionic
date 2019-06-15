@@ -1,9 +1,9 @@
 # Ionic todo
-A simple todo application using ionic. Uses the https://jsonplaceholder.typicode.com/ for data.
+A simple todo application using ionic. Its using the https://jsonplaceholder.typicode.com/ for data.
 
 
 ## Getting started
-This will start the application localhost port 4200 in your browser
+This will start the application in your browser
 ```
 npm install
 npm run start
