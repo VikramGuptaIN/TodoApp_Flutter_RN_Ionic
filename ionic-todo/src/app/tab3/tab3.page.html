@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Add todo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form (ngSubmit)="addTodo()">
+        <ion-item>
+          <ion-label>Todo</ion-label>
+          <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+        </ion-item>
+        <button ion-button type="submit" block>Add Todo</button>
+      </form>
+</ion-content>

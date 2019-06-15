@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Completed
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let todo of todos" (click)="onItemClick(todo.id)">
+      <div slot="start">
+        {{todo.id}}
+      </div>
+      <ion-label>{{todo.title}}</ion-label>
+      <div slot="end">
+        <ion-icon name="heart" [ngStyle]="{'color': 'red'}"></ion-icon>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
